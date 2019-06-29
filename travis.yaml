@@ -1,0 +1,5 @@
+language: java
+
+script:
+  - mvn clean package
+  - mvn sonar:sonar -Dsonar.projectKey=omar-nav_reimburse -Dsonar.organization=omar-nav-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=1bb1b377d451114fc00251e802156be2f6570388
